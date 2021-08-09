@@ -1,0 +1,17 @@
+
+
+
+<p>
+    listado
+</p>
+
+
+<ul>
+    <div *ngFor="let heroe of heroes; let i = index">
+      <div *ngIf=" i === 1">
+        loolis
+      </div>
+      <p>{{i}} - {{ heroe }}</p>
+        <button (click)="borrar(i)">Borrar</button>
+    </div>
+</ul>
